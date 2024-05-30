@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./Style.css">
+        <link rel="stylesheet" href="./lib/v6.15.1-dist/ol.css">
+    </head>
+<body>
+    <div class="grid-container">
+        <div class="grid-1">
+            <div class="sidebar">
+                <h2>Base Layers</h2>
+                <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked> OSM Standard<br>
+                <input type="radio" name="baseLayerRadioButton" value="OSMSHumanitarian"> OSM Humanitarian<br>
+                <input type="radio" name="baseLayerRadioButton" value="BingMap"> Bing Map<br>
+                <input type="radio" name="baseLayerRadioButton" value="StamenTerrain">Stamen Terrain<br>
+                <input type="radio" name="baseLayerRadioButton" value="CartoDB">CartoDB Layer<br>
+
+                <h2> Layers</h2>
+                <input type="checkbox" name="otherLayersCheckbox" value="NOAAWMSLayer">NOAA WMS Layer<br>
+                <input type="checkbox" name="otherLayersCheckbox" value="vectorGJLayer">GeoJSON Layer<br>
+                <input type="checkbox" name="otherLayersCheckbox" value="vectorKMLLayer">KML Layer<br>
+                <input type="checkbox" name="otherLayersCheckbox" value="rasterLayer">Raster Layer<br>
+
+                <h2>Geolocation Information</h2>
+                <p id = "geolocation"></p>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div id="js-map" class="map"></div>
+        </div>
+    </div>
+    <div class = "overlay-container">
+        <h3>Institute Name : </h3"/t">
+        <span class = "overlay-text1" id = "feature-name"></span>
+        <h4>Courses : </h4"/t">
+        <span class = "overlay-text2" id = "feature-info1"></span>
+        <h4>Total Courses : </h4"/t">
+        <span class = "overlay-text3" id = "feature-info2"></span>
+        <h4>Entrance Exam : </h4"/t">
+        <span class = "overlay-text4" id = "feature-info3"></span><br>
+        <h4>Link : </h4"/t">
+        <span class = "overlay-text5" id = "feature-info4"></span><br>
+    </div>
+    <script src="./lib/v6.15.1-dist/ol.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

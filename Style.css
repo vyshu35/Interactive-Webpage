@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns:20vw 80vw;
+    grid-template-rows: 100vh;
+
+}
+.sidebar{
+    margin-left:15px;
+}
+
+
+/*for feature ovrlay*/
+.overlay-container{
+    border:2px solid black;
+    background-color: aquamarine;
+    width: 400px;
+    color: brown;
+    text-align:center;
+    border-radius: 1px;
+    padding: 2px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.overlay-container #feature-info::after{
+    content: "";
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(216, 22, 22) transparent transparent transparent;
+}
+
+.overlay-text1{
+    color: red;
+}
+.overlay-text2{
+    color: black;
+}
+.overlay-text3{
+    color: black;
+}
+.overlay-text4{
+    color:black;
+}
+.overlay-text5{
+    color: blue;
+}
